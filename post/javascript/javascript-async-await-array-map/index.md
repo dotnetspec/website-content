@@ -27,7 +27,7 @@ const getData = async () => {
   return await Promise.all(list.map(item => anAsyncFunction(item)))
 }
 
-const data = getData()
+const data = await getData()
 console.log(data)
 ```
 
